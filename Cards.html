@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+            background-color: rgb(205, 229, 255);
+        }
+        .card{
+            position: relative;
+            width: 330px;
+            height: 280px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 20px rgb(0,0,0,0.5);
+            transition: all 0.3s;
+            padding: 30px 50px;
+            margin: auto 30px;
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+        .card:hover{
+            height: 400px;
+        }
+        .image-box{
+            position: relative;
+            height: 100%;
+            width: 100%;
+            transform: translateY(-100px);
+        }
+
+        img{
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 5px 20px rgb(0,0,0,0.5);
+        }
+
+        .content{
+            padding: 10px 10px;
+            text-align: center;
+            transform: translateY(-390px);
+            opacity: 0;
+        }
+        .card:hover> .content{
+            opacity: 1;
+            transform: translateY(-150px);
+        }
+
+        .content h2{
+            color: rgb(25, 51, 203);
+        }
+
+        h3{
+            color: rgb(255, 0, 47);
+        }
+        p{
+            padding: auto 5px;
+            font-size: 13px;
+            font-weight: 400;
+            color: darkmagenta;
+        }
+    </style>
+</head>
+<body>
+    <div class="card" style="background-color: rgb(249, 158, 178);">
+        <div class="image-box">
+            <img src="friend3.jpg" height="280px" width="250px" alt="#">
+        </div>
+        <div class="content">
+            <h2>Hello,Dear </h2>
+            <h3>Nitin Chaudhary</h3>
+            <p>The World may not recognize the value of a shiny stone, but to me , <span style="font-size: 14px; color: crimson;">you are a diamond</span> <span style="color: rgb(54, 90, 0); font-weight: bolder;">!!! I LIKE YOU SO MUCH !!!</span></p>
+        </div>
+    </div>
+    <div class="card" style="background-color: rgb(3, 3, 3);">
+        <div class="image-box">
+            <img src="friend4.jpg" alt="#">
+        </div>
+        <div class="content">
+            <h2>Keep Smiling</h2>
+            <h3>Nitin Chaudhary</h3>
+            <p style="font-style: 14px; color: greenyellow; font-size: 15px;">You will fall in love many times in your life. But the best one will be falling in love with your best friend.</p>
+        </div>
+    </div>
+    <div class="card"  style="background-color: rgb(250, 182, 255);">
+        <div class="image-box">
+            <img src="friend2.jpg" height="260px" width="280px" alt="#">
+        </div>
+        <div class="content">
+            <h2>Dear Love...</h2>
+            <h3 style="font-size: 16px; color: rgb(236, 22, 37);">Nitin Chaudhary</h3>
+            <p style="font-size: 15px; color: rgb(46, 7, 66);">I want to grow old with you and make a lifetime of beautiful memories. Will you be mine???</p>
+        </div>
+    </div>
+</body>
+</html>
